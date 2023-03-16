@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 헤드 부분에 스타일을 넣는 것이 css */
+        label {
+            width: 60px;
+            /* 이름이 들어가는 공간에 60px만큼의 공간을 주겠다는 뜻. 그런데 이걸로는 떨어지지 않는다. 
+            추가적으로 뭔가 필요하다. 그것이 인라인-블록.
+            인라인은 블록이 없지만, 이 크기(여기서는 60)만큼은 블록으로 잡겠다는 것.
+            원래는 이름 이라는 2글자 크기만큼만 크기가 잡히지만, 60px만큼 잡겠다.*/
+            float: left;
+            /* display: inline-block;  */
+            /* 인라인 요소는 입력받은 컨테이너의 크기만큼만 크기가 잡힘. */
+            /* 정렬은 추후 CSS에서 다룰 예정. 강사님은 이 방법이 직관적이어서 많이 쓰심. */
+
+        }
+        div{
+            margin-bottom: 8px;
+            /* div 태그에 마진을 8px 줬음. */
+        }
+    </style>
+</head>
+<body>
+    <h1>예약정보</h1>
+    <form action="">
+        <div>
+        <label for="name">이름</label>
+        <input type="text" id="name">
+        </div>
+        <div>
+            <label for="phoneNum">휴대폰</label>
+            <input type="text" id="phoneNum">
+        </div>
+        <div>
+            <label for="email">이메일</label>
+            <input type="text" id="phoneNum">
+        </div>
+        <button type="submit" >예약</button>
+    </form>
+</body>
+</html>

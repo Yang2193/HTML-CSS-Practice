@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+스타일을 초기화하는 링크. 이 한 줄로 모든 스타일이 리셋된다. -->
+<style>
+    .id{ 
+        margin-bottom: 10px;
+        /* div class 태그를 건 선택자는 .클래스이름 이런 식으로 해줘야한다. 이런 식으로 해야 UI구현시 간격조절 수월*/
+    }
+    .pwd{
+        margin-bottom: 4px;
+
+    }
+    div{
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <form action ="">
+        <!-- label : form 태그 안에서 상호작용 요소에 이름을 붙일 때 사용 -->
+        <!-- name : 서버에서 지정된 이름으로 입력요소를 식별 할 수 있음-->
+        <label for="male">남성</label>
+        <input type="radio" name="gender" id="mail" checked>
+        <!-- checked를 하면 해당 칸이 체크되어있음. -->
+        <label for="female">여성</label>
+        <input type="radio" name="gender" id="femail">
+
+        <fieldset>
+            <legend>기본 정보</legend>
+            <div class="id">
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </div>
+            <!-- 스타일을 넣을 때 p태그보단 div 태그를 넣고 마진을 주는 것이 강사님 스타일 -->
+            <div class="pwd">
+                <label for="passwd">비밀번호</label>
+                <input type="text" id="passwd">
+            </div>
+        </fieldset>
+        <!-- 테두리가 생기는 필드셋, 필드셋이 뭔지 설명해주는 레전드 -->
+        <fieldset>
+            <legend>선택 정보</legend>
+            <div>
+                <label for="age">나이</label>
+                <input type="number" id="age">
+                <!-- 서버가 식별해야 할 것이 없으면 name을 안 써도 된다. -->
+            </div>
+            <div>
+                <label for="recommender">추천인</label>
+                <input type="text" id="recommender">
+            </div>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>블로그 글쓰기</fieldset>
+        <div>
+            <label for="title"> 제목 </label>
+            <input type="text" id="title">
+        </div>
+        <div>
+            <label for="desc"></label>
+            <textarea name="" id="desc" cols="80" rows="10" readonly></textarea>
+            <!-- 텍스트를 쓸 수 있는 공간을 제공 readonly, 읽기 전용-->
+        </div>
+    </form>
+</body>
+</html>

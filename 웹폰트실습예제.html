@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+     
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto&display=swap');
+        body{
+            font-family: 'Roboto', cursive;
+        }
+        .container{
+            width: 304px;
+            height: 390px;
+            border: 1.5px solid gray;
+        }
+        
+        .box{
+            margin-top: 22px;
+            margin-left: 38px;
+            width: 228px;
+            height: 44px;
+            font-family: 'Roboto', cursive;
+        }
+
+        .box1{
+            margin-left: 38px;
+            margin-top: 28px;
+            width: 228px;
+            height: 44px;
+        }
+
+        #loginG{
+            box-sizing: border-box;
+            width: 228px;
+            height: 44px;
+            font-family: 'Roboto', cursive;
+            font-size: 14px;
+            font-weight: bold;
+            color: #504444;
+            background-color: #ffffff;
+            border: 2px solid black;
+        }
+        #or {
+            font-family: 'Roboto', cursive;
+            font-size: 16px;
+            color:#504444;
+            text-align: center;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+
+        #forgot{
+            font-family: 'Roboto', cursive;
+            font-size: 14px;
+            color:#2C3432;
+            text-align: center;
+        }
+        #login{
+            font-family: 'Roboto', cursive;
+            font-size: 14px;
+            color:#ffffff;
+            background-color: #373F3C;
+            width: 228px;
+            height: 44px;
+        }
+        i{
+            margin-right:10px;
+        }
+        .box > input{
+            width: 228px;
+            height: 44px;
+            box-sizing: border-box;
+            border-style: none;
+        }  
+        button{
+          border-style: none;
+        }
+        p{
+            margin-top: 20px;
+            margin-left: 38px;
+            margin-bottom: 0;
+            width: 228px;
+            height: 44px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="container" action="#">
+        <div class="box1">
+            <button type="submit" id="loginG"><i class="fa-brands fa-google"></i>Log in with Google</button>
+        </div>
+        <p id="or">or</p>
+        <div class="box">
+            <label for="Username" ></label>
+            <input type="text" id="Username" placeholder="Username">
+        </div>
+        <div class="box">
+            <label for="pwd"></label>
+            <input type="password" id="pwd" placeholder="Password">
+        </div>
+        <div class="box">
+            <button type="submit" id="login">LOGIN</button>
+         </div>
+        <p id="forgot">Forgot your password?</p>
+        
+    </form>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            width: 100%;
+            height: 200px;
+            /* flex-wrap: wrap; */
+            /* nowrap인 경우 최대한 너비를 줄여서 안에 박아넣다가 
+            컨텐츠 너비 때문에 더 이상 못 너비를 줄이지 못하면 박스 밖으로 나감
+            부모 컨테이너 안에 넣어야할 때 필요 */
+            /* wrap으로 바꾸면 넘칠 경우 아래로 내림 */
+            /* wrap-reverse는 위 아래를 바꿔서 정렬 좌우 순서를 바꾸는건 flex-direction */
+            background-color: bisque;
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            /* flex-direction + flex-wrap 속성 두개 동시에 쓰는 flow */
+            justify-content: space-evenly;
+            /* justify-content는 주축방향에 따라 정렬이 결정됨. */
+            /* flex-direction: row; */
+            /* flex-direction으로 정렬방식을 계속 바꿀 수 있다.
+            row 수평 column 수직 기본값은 row */
+            /* justify-content: center; */
+            /* justify-content로 정렬가능 */
+            /* align-items: space-evenly; */
+            align-content: space-evenly;
+            /* 내부에 아이템이 여러개일 땐 content를 써서 정렬 */
+            /* 교차축 방향으로 정렬할 때 사용 */
+            /* 크기가 안 정해지면 컨텐츠 영역만큼만 잡음 */
+
+        }
+
+        .flex-item{
+            width: 80px;
+            height: 60px;
+            /* 높이를 지정안하면 FULL로 채워짐 */
+            /* margin: 2px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* 내부 문구를 박스 정중앙에 위치시키기 위한 3개 코드 */
+            /* 내부의 아이템이 하나이므로 align-items로 정렬 */
+            border: 1px solid darkblue;
+            color: white;
+            background-color: orange;
+        }
+
+        .flex-item:nth-child(2n){
+            /* 2n으로 넣으면 짝수가 됨 */
+            background-color: orangered;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">item1</div>
+        <div class="flex-item">item2</div>
+        <div class="flex-item">item3</div>
+        <div class="flex-item">item4</div>
+        <div class="flex-item">item5</div>
+        <div class="flex-item">item6</div>
+
+    
+    </div>
+    
+</body>
+</html>

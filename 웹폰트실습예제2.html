@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+   
+       *{
+           padding: 0;
+           box-sizing: border-box;
+       }
+   
+       body{
+           font-family: 'Nanum Pen Script', cursive;
+       }
+   
+   
+       #postit{
+        position: relative;
+           width : 380px;
+           height : 330px;
+            margin: 50px;
+           background-color: #ffff99;
+           padding: 18px;
+           transform: rotate(10deg);
+           text-align: center;
+           font-family: 'Nanum Pen Script', cursive;
+   
+       }
+       #postit p{
+           font-size: 25px;
+           margin-bottom: 20px;
+           text-align: center;
+           font-family: 'Nanum Pen Script', cursive;
+   
+       }
+   
+       #postit h1{
+            margin-top: 0px;
+           font-size: 44px;
+           text-align: center;
+           margin-bottom: 20px;
+           font-family: 'Nanum Pen Script', cursive;
+   
+       }
+       #postdeco{
+        position: absolute;
+        top: 330px;
+        left: 300px;
+        background-color: rgba(255,255,255,0.5);
+        width: 80px;
+        height: 50px;
+        transform: rotate(-40deg);
+        transform-origin: top left;
+        
+
+
+       }
+       
+       #postdeco2{
+        position: absolute;
+        top: 330px;
+        left: 300px;
+        background-color: white;
+        width: 200px;
+        height: 50px;
+        transform: rotate(-20deg);
+        transform-origin: top left;
+       }
+
+
+
+
+
+   </style>
+</head>
+
+<body>
+    <div id="postit">
+            <h1>To. 남편</h1>
+            <p>여보~ 오늘 급하게 먼저 출근해야 해서<br>
+                인사도 못 하고 먼저 나가요~
+            </p>
+            <p>아침 굶지 말고 냉장고에 있는 반찬<br>
+                전자레인지에 데워서 챙겨 먹고 나가요~!
+            </p>
+            <p>그럼 오늘 하루도 힘내고 이따 저녁에 봐요!<br>
+                화이팅~!
+            </p>
+            <div id="postdeco"></div>
+            <div id="postdeco2"></div>
+    </div>
+    
+</body>
+</html>

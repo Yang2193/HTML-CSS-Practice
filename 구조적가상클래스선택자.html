@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 구조적 가상 클래스 선택자 : 요소의 구조와 위치에 따라 스타일을 적용 */
+        li:first-child{
+            color: red;
+            font-weight: bold;
+        }
+        /* list의 첫번째 자식에게 컬러 레드. */
+        li:last-child{
+            color: green;
+            font-weight: bold;
+        }
+        /* list의 마지막 자신에게 컬러 그린. */
+
+        /* 요소의 n번째 자식 요소를 선택 */
+        p:nth-child(2){
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>태그 1번</p>
+    <p>태그 2번</p>
+    <div>
+        <p>태그 3번</p>
+        <p>태그 4번</p>
+    </div>
+    <p>태그 5번</p>
+
+</body>
+</html>

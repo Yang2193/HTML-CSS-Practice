@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h2>
+    <p>나의 첫번째 html을 작성 합니다.</p>
+    <!-- 제목의 크기를 결정 합니다. 실제 화면 구성 시에는 CSS에서 폰트의 크기를 결정 하도록 함.-->
+    <h1>제목 크기 1입니다.</h1><!-- 지금이야 제목 크기를 이렇게 지정하지만 나중에는 이렇게 쓰지 않는다.-->
+    <h2>제목 크기 2입니다.</h2>
+    <h3>제목 크기 3입니다.</h3>
+    <h4>제목 크기 4입니다.</h4>
+    <h5>제목 크기 5입니다.</h5>
+    <h6>제목 크기 6입니다.</h6>
+    <p>p 태그는 단락을 의미하며, 태그의 위, 아래에 약간의 여백이 추가됩니다.</p>
+    <p>
+        안녕하세요. <br>
+            HTML과 CSS를 공부합니다. <br>
+    </p>
+
+    <h3>레드향</h3>
+    <p>
+        껍질에 붉은 빛이 돌아 레드향이라고 불린다. <br>
+        레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2-3배 크고, 과육이 붉고 통통하다. <br>
+        비타민 C와 비타민 P가 풍부해 혈액 순환, 감기예방 등에 좋다.
+    
+    </p>
+<p>일반적인 문구</p>
+<!--들여쓰기처럼 동작-->
+<blockquote>인용문</blockquote>
+<!--줄바꿈 br 태그-->
+<p>Red Dead Redemption2 <br>
+Arthur Morgan</p>
+<!--텍스트를 굵게 표시-->
+<!--웹 접근성을 따진다면 strong으로 써야한다.-->
+<strong>텍스트</strong>
+<br>
+<b>텍스트</b>
+
+<h1>레드향</h1>
+  <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+  <p>레드향은 <em>한라봉과 귤을 교배</em><!--글 기울이는 것-->한 것으로<br>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  <p><i>비타민 C</i>와 <i>비타민 P</i>가 풍부해<br> <strong>혈액순환, 감기예방</strong> 등에 좋은 것으로 알려져 있다.</p>
+  <h2>레드향 샐러드 레시피</h2>
+  <h2>상품 구성</h2>
+<!-- i와 em 태그는 둘 다 글을 기울여서 보이게 해주는 것이지만 의미가 있느냐 없느냐 차이-->
+
+
+<!-- 수평 가로선 -->
+<hr>
+<!--del취소선-->
+<!--ins태그는 새로 추가된 텍스트-->
+<p>세일 기간을 맞이하여 온라인 수강권을 할인된금액(정가<del>36,000원</del><ins>20,000원</ins>)에 판매 합니다.</p>
+<!--위 첨자, 아래 첨자-->
+<p>공기의 원소 기호는 H<sub>2</sub>O</p>
+<p>4<sup>2</sup>은 16입니다. </p>
+<!--  div-->
+<div>의미없이 집어넣는 태그. 문단을 구간으로 나누고 스타일을 먹일 때 나눈다.</div>
+<div class="movie">
+    <p><span style="font-style: italic; font-weight: bold;">영화</span>소개</p>
+    <p>영화를 소개하는 페이지입니다.</p>
+  </div>
+  <div class="tv">
+    <p>TV 프로그램 소개</p>
+    <p>TV 프로그램을 소개하는 페이지입니다.</p>
+  </div>
+<style>.movie { 
+            background-color: blueviolet;
+            font-size: 20px;
+            color: beige;
+                }
+        .tv {
+            background-color: blue;
+            font-size: 30px;
+            color: azure;
+            }
+            
+            
+            </style>
+    <div style="background-color:lightgray; color:green; text-align:center">
+    <p>음악 소개</p>
+    <p>음악을 소개하는 페이지입니다.</p>
+</div>
+<p style="background-color: royalblue; color: white;">저는 블록 요소입니다.</p> <!--라인 전체에 스타일이 들어감-->
+<span style="background-color: pink;">저는 인라인 요소입니다.</span> <!-- 글자 수에 따라 스타일이 들어감-->
+
+<h1>판매 중인 과일</h1>
+<ul>
+    <li>사과</li>
+    <li>멜론</li>
+    <li>바나나</li>
+</ul> <!-- 스타일 날리면 사라짐 -->
+<h1>판매 중인 과일</h1>
+<ol>
+    <li>사과</li>
+    <li>멜론</li>
+    <li>바나나</li>
+</ol>
+<!-- ul은 숫자 없는 점, ol은 앞에 순서표기. -->
+
+<h3>레드향 샐러드 레시피</h3>
+<p><span style="font-weight: bold;">재료:</span> 레드향 1개, 아보카도 1개, 토마토 1개, 샐러드 채소 30g</p>
+<p><span style="font-weight: bold;">드레싱:</span> 올리브유 1큰술, 레몬즙 2큰술, 꿀1큰술, 소금 약간 </p>
+<ol>
+    <li style="background-color: gold;">샐러드 채소를 씻고 물기를 제거한 후 준비합니다.</li>
+    <li>레드향과 아보카도를 먹기 좋은 크기로 썰자</li>
+    <li>드레싱 재료를 믹서에 갈자</li>
+    <li>섞고 섞고</li>
+</ol>
+<dl>
+    <dt>HTML</dt>
+    <dd>HTML은 Hyper Text Markup Language의 약자로 웹 문서의 구조를 설계하기 위한 목적으로 개발된 언어입니다.</dd>
+    <dt>CSS</dt>
+    <dd>CSS는 Cascading Style Sheets의 약자로 웹 문서를 꾸미기 위한 목적으로 개발된 언어입니다.</dd>
+  </dl> 
+<h2>
+  <a href="http://google.co.kr" target = "_blank"> 구글로 이동</a></h2>
+</body>
+
+</html>

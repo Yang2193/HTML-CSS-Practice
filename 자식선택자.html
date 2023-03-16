@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    /* 자식 선택자(>): 부모 요소의 하위에 있는 자식 요소에 스타일 적용 */
+
+    .box > p{
+        color: red;
+
+    }
+    /* 그냥 그룹으로 쓰면 box내부의 모든 p태그를 다 적용시키겠다는  뜻. */
+    /* >를 쓰면 box내부에 바로 있는 p 태그만 적용시키겠따는 든.  */
+</style>
+<body>
+    <div class="box">
+        <p>1번 항목입니다.</p>
+        <div>
+            <p>4번 항목입니다.</p>
+        </div>
+        <p>2번 항목입니다.</p>
+        <p>3번 항목입니다.</p>
+    </div>
+    
+</body>
+</html>

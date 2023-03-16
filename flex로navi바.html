@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+ 
+        .container{
+            display: flex;
+            width : 400px;
+            height: 50px;
+            background-color: gray;
+            flex-flow: row;
+            justify-content: space-evenly;
+        }
+
+        nav a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-grow: 1;
+            /* 자식 요소가 부모의 너비를 다 쓰게 만드는... */
+            color:black;
+        }
+
+        nav a:hover{
+            background-color: black;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <a href="#">메뉴1</a>
+        <a href="#">메뉴2</a>
+        <a href="#">메뉴3</a>
+        <a href="#">메뉴4</a>
+    </nav>
+</body>
+</html>

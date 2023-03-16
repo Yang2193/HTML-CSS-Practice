@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 클래스 선택자는 앞에 .을 붙인다. */
+    .container{
+        width: 520px;
+
+    }
+    fieldset{
+        width: 560px;
+    }
+  
+</style>
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+            <h1>프런트엔드 개발자 지원서</h1>
+            <p>HTML, CSS, JAVASCRIPT에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+            <hr>
+            <h4>개인정보</h4>
+                <div class="container">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="공백없이 입력하세요.">
+                </div>
+                <div class="container">
+
+                    <label for="phone">연락처</label>
+                    <input type="text" id="phone">
+                </div>
+            <h4>지원분야</h4>
+            <div class="container">
+                    <input type="radio" id="publishing">
+                    <label for="publishing">웹 퍼블리싱</label>
+                </div>
+                <div class="container">
+                    <input type="radio" id="develope">
+                    <label for="develope">웹 어플리케이션 개발</label>
+                    
+                </div>
+                <div class="container">
+                    <input type="radio" id="environment">
+                    <label for="environment">개발 환경 개선</label>
+                </div>
+            <h4>지원동기</h4>
+                <div class="container">
+
+                    <label for="desc"></label>
+                    <textarea name="" id="desc" cols="60" rows="5"></textarea>
+                    
+                </div>
+                <div class="container">
+
+                <button type="submit">제출</button>
+                <button type="reset">다시 쓰기</button>
+                </div>
+            </fieldset>
+    </form>
+</div>
+    
+</body>
+</html>
