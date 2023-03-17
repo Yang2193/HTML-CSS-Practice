@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #flex-box{
+            display: flex;
+            width: 100vw;
+            flex-flow: wrap;
+        }
+
+        #flex-box .flex-item {
+            width: 160px;
+            height: 240px;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+
+        .flex-item img{
+            width: 160px;
+            height: 240px;
+        }
+
+        .image-item{
+            width: 160px;
+            height: 240px;
+            margin: 5px;
+        }
+        .image-item:nth-child(1){background-image: url(./images/1.jpg);
+
+        }
+        .image-item:nth-child(2){background-image: url(./images/2.jpg);}
+        .image-item:nth-child(3){background-image: url(./images/3.jpg);}
+        .image-item:nth-child(4){background-image: url(./images/4.jpg);}
+        .image-item:nth-child(5){background-image: url(./images/5.jpg);}
+        .image-item:nth-child(6){background-image: url(./images/6.jpg);}
+    </style>
+</head>
+<body>
+    <div id="flex-box">
+        <!-- <div class="flex-item"><img src="./images/2.jpg" alt="2"></div>
+        <div class="flex-item"><img src="./images/1.jpg" alt="1"></div>
+        <div class="flex-item"><img src="./images/3.jpg" alt="3"></div>
+        <div class="flex-item"><img src="./images/4.jpg" alt="4"></div>
+        <div class="flex-item"><img src="./images/5.jpg" alt="5"></div>
+        <div class="flex-item"><img src="./images/6.jpg" alt="6"></div> -->
+        <div class="image-item"></div>
+        <div class="image-item"></div>
+        <div class="image-item"></div>
+        <div class="image-item"></div>
+        <div class="image-item"></div>
+        <div class="image-item"></div>
+    </div>
+    
+</body>
+</html>

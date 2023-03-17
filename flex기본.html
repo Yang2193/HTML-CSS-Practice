@@ -5,7 +5,7 @@
     <title>Document</title>
     <style>
         .flex-container{
-            width: 100%;
+            width: 400px;
             height: 200px;
             /* flex-wrap: wrap; */
             /* nowrap인 경우 최대한 너비를 줄여서 안에 박아넣다가 
@@ -26,7 +26,7 @@
             /* justify-content: center; */
             /* justify-content로 정렬가능 */
             /* align-items: space-evenly; */
-            align-content: space-evenly;
+            /* align-content: space-evenly; */
             /* 내부에 아이템이 여러개일 땐 content를 써서 정렬 */
             /* 교차축 방향으로 정렬할 때 사용 */
             /* 크기가 안 정해지면 컨텐츠 영역만큼만 잡음 */
@@ -37,7 +37,7 @@
             width: 80px;
             height: 60px;
             /* 높이를 지정안하면 FULL로 채워짐 */
-            /* margin: 2px; */
+            margin: 2px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -46,11 +46,13 @@
             border: 1px solid darkblue;
             color: white;
             background-color: orange;
+            align-items: center;
         }
 
-        .flex-item:nth-child(2n){
-            /* 2n으로 넣으면 짝수가 됨 */
-            background-color: orangered;
+        .flex-container .flex-item:nth-child(3){
+            flex-grow: 1;
+            /* flex-grow 남는 공간을 전부 가져감 */
+            background-color: red;
         }
 
     </style>
