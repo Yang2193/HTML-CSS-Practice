@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        body{
+            background-color: #ccc;
+        }
+        #container{
+            display: grid;
+            width: 700px;
+            height: 100vh;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 4px;
+            column-gap: 4px;
+
+        }
+
+        .box{
+            box-shadow: 1px 1px 4px black;
+            background-color: white;
+            border: 1px solid black;
+            position: relative;
+            padding : 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+
+        .box img{
+            width : 60%;
+            height : 40%;
+            margin : 16px;
+        }
+
+        .box p{
+            font-size: 10px;
+        }
+        .box h2{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box box1">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-1.jpg" alt="cup-1">
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box2">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-2.jpg" alt="cup-2">
+
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box3">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-3.jpg" alt="cup-3">
+
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box4">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-4.jpg" alt="cup-4">
+
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box5">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-5.jpg" alt="cup-5">
+
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box6">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-6.jpg" alt="cup-6">
+
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box7">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-7.jpg" alt="cup-7">
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+
+        </div>
+        <div class="box box8">
+            <h2>사진 제목</h2>
+            <img src="./images/cup-7.jpg" alt="cup-7">
+            <p>사진 설명 : Lorem ipsum dolor sit amet, 
+                consectetur adipisicing elit. Ullam, numquam. 
+                Neque mollitia esse blanditiis facere</p>
+        </div>
+    </div>
+    
+</body>
+</html>

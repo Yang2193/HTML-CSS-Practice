@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            width: 500px;
+            grid-gap: 10px;
+            grid-template-columns: repeat(5, 92px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+            "box1 box2 box2 box3 box3"
+            "box4 box2 box2 box5 box5"
+            "box6 box7 box8 box9 box10"
+        }
+        .grid-box{
+            border: 1px solid black;
+        
+        }
+
+        .box1{
+            grid-area: box1;
+            background-color: orange;
+        }
+        .box2{
+            grid-area: box2;
+            background-color: aqua;
+        }
+        .box3{
+            grid-area: box3;
+        }
+        .box4{
+            grid-area: box4;
+        }
+        .box5{
+            grid-area: box5;
+        }
+        .box6{
+            grid-area: box6;
+        }
+        .box7{
+            grid-area: box7;
+        }
+        .box8{
+            grid-area: box8;
+        }
+        .box9{
+            grid-area: box9;
+        }
+        .box10{
+            grid-area: box10;
+        }
+
+        @media (max-width: 500px) {
+            #container{
+                width: 100%;
+                grid-template-columns: repeat(3, 92px);
+                grid-template-rows: repeat(5, 100px);
+                grid-template-areas: 
+                "box1 box2 box2"
+                "box3 box2 box2"
+                "box4 box5 box6"
+                "box7 box8 box9"
+                "box10 box10 box10";
+            }
+
+            /* .grid-item3, .grid-item5{
+                grid-column: unset;
+                *라인으로 지정해놨던거 다시 원래 크기로 돌려놓는 것...
+            } */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="grid-box box1">1</div>
+        <div class="grid-box box2">2</div>
+        <div class="grid-box box3">3</div>
+        <div class="grid-box box4">4</div>
+        <div class="grid-box box5">5</div>
+        <div class="grid-box box6">6</div>
+        <div class="grid-box boz7">7</div>
+        <div class="grid-box box8">8</div>
+        <div class="grid-box box9">9</div>
+        <div class="grid-box box10">10</div>
+    </div>
+    
+</body>
+</html>
