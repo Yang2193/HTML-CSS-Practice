@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body{
+            font-family: 'Roboto';
+
+        }
+
+        #login{
+            font-family: 'Roboto';
+            margin: 10px;
+            border: 1px solid gray;
+            width: 304px;
+            height: 390px;
+        }
+        div{
+            font-family: 'Roboto';
+            padding-top: 28px;
+        
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p, input, .login2{
+            font-family: 'Roboto';
+            margin-top: 16px;
+            width: 228px;
+            height: 44px;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        p{
+            font-family: 'Roboto';
+            font-weight: bold;
+            font-size:16px;
+            color: #504444;
+        }
+
+        a{
+            margin-top: 20px;
+            text-align: center;
+            width: 228px;
+            height: 44px;
+            text-decoration: none;
+            color: #2C3432;
+            font-size: 14px;
+            font-family: 'Roboto';
+
+        }
+
+        button{
+            font-family: 'Roboto';
+            width: 228px;
+            height: 44px;
+            background-color: white;
+        }
+
+        .login2{
+            background-color: #373f3c;
+            color: #fff;
+            border: none;
+        }
+        i{margin: 4px;}
+    
+      </style>
+</head>
+<body>
+    <form action="#" id="login">
+        <div>
+         <button type="submit"><i class="fa-brands fa-google"></i>Log in with Google</button>
+       
+            <p>or</p>
+  
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Username">
+     
+            <label for="pwd"></label>
+            <input type="password" id="pwd" placeholder="Password">
+        
+            <button type="submit" class="login2">LOGIN</button>
+       
+            <a href="#">Forgot your password?</a>
+         </div>
+    </form>
+</body>
+</html>

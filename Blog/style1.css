@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Nanum+Gothic&display=swap');
 
 body {
+    font-family: 'Nanum Gothic', cursive;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,22 +17,14 @@ aside, main {
   flex-basis: 0;
 }
 
-aside {
-  flex-grow: 1;
-  order: 2;
-}
-
-main {
-  flex-grow: 3;
-  order: 1;
-}
-
 header{
+    padding-top:10px;
     background-color: #234794;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 header h1 {
@@ -42,7 +36,7 @@ header h1 {
 nav{
     background-color: #234794;
     height: 30px;
-
+    flex-shrink: 0;
 }
 
 nav ul{
@@ -69,21 +63,30 @@ nav ul li a{
     margin-top: 10px;
     margin-bottom : 10px;
     flex-grow: 1;
+
   }
 
-main{
+  .container main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
     border: 1px solid #234794;
+    flex-grow: 3;
+    order: 1;
+    flex-shrink: 0
 
-}
+  }
 
-aside{
+.container aside{
     margin-left: 10px;
     border: 1px solid #234794;
     display: flex;
     flex-flow: wrap column;
     justify-content: flex-start;
     background-color: #234794;
+    flex-grow: 1;
+    order: 2;
 
 }
 
@@ -92,8 +95,9 @@ aside ul{
     height: 100%;
     display: flex;
     flex-flow: wrap column;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
 }
 
 aside ul li{
@@ -110,6 +114,15 @@ aside ul li a{
     color: white;
 }
 
+aside ul li input{
+    width: 60%;
+    height: 100%;
+}
+aside ul li button{
+    height: 124%;
+}
+
+
 a:hover {
     color: gray;
 }
@@ -120,8 +133,218 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
+   
 }
 
 footer p{
     color: white;
 }
+
+h2{
+    font-size : 18px;
+    font-weight: bold;
+}
+
+.recent h2{
+
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+.recent h3{
+    font-size : 18px;
+    font-weight: bold;
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+.recent p{
+    font-size : 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.container div{
+    margin : 10px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.recent ol{
+    list-style-type: disc;
+}
+
+.recent ol li{
+    margin: 10px;
+}
+.recent ol li p{
+    padding: 10px;
+}
+
+.recent ol li a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.recent ol li a:hover{
+    color: gray;
+}
+
+.recent ol li img{
+    width : 100%;
+    height: 100%;
+}
+
+.container article{
+    flex-grow: 2;
+}
+
+section{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-content: center;
+    flex-grow: 1;
+}
+
+section a{
+    text-decoration: none;
+}
+section a .wantyou{
+    margin: 10px;
+    box-sizing: border-box;
+    width : 300px;
+    height : 350px;
+    
+}
+
+section a:nth-child(1) .wantyou{
+    background-image: url("./images/wantyou.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+section a:nth-child(2) .wantyou{
+    background-image: url("./images/iwantyou.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section a:nth-child(3) .wantyou{
+    border: 1px solid #234794;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .wantyou:hover{
+    transition: ease;
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
+
+img{
+    width : 40px;
+    height : 40px;
+    margin-right : 20px;
+}
+
+.forTheAlliance h2{
+    margin-bottom : 10px;
+}
+
+.forTheAlliance p{
+    padding-left : 10px;
+    line-height: 20px;
+}
+
+.introduce h2{
+    margin-bottom : 10px;
+}
+
+.introduce p{
+    padding-left : 10px;
+    line-height: 20px;
+}
+
+.recent ol h2{
+    margin-bottom: 10px;
+}
+
+.recent{
+    height : 40vh;
+    overflow: scroll;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #234794;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative; /* 부모 요소에 position: relative 추가 */
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .menu1 {
+    display: none;
+
+  }
+  
+  .menu-button:checked + .menu1 {
+    display: flex;
+    width: 100%;
+  }
+
+aside{
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+@media  screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 10px;
+        margin-bottom : 10px;
+        flex-grow: 1;
+      }
+
+      section{
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+}
+
+.menu1 {
+  display: none;
+}
+
+.menu1.show {
+  display: block;
+}
+
+.menu-button .menu1 li a{
+    font-size: 0.8em;
+     width:100px;
+}
+
+  
+
