@@ -4,8 +4,6 @@ body {
     font-family: 'Nanum Gothic', cursive;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    position: relative;
   }
   
 header, nav, .container, footer {
@@ -62,7 +60,7 @@ nav ul li a{
     align-items: stretch;
     margin-top: 10px;
     margin-bottom : 10px;
-    flex-grow: 1;
+    height: calc(100vh - 180px);
 
   }
 
@@ -73,12 +71,12 @@ nav ul li a{
     padding: 10px;
     border: 1px solid #234794;
     flex-grow: 3;
-    order: 1;
-    flex-shrink: 0
-
+    height: 100%;
+    overflow: scroll;
   }
 
 .container aside{
+    
     margin-left: 10px;
     border: 1px solid #234794;
     display: flex;
@@ -86,17 +84,18 @@ nav ul li a{
     justify-content: flex-start;
     background-color: #234794;
     flex-grow: 1;
-    order: 2;
+   
+
 
 }
 
 aside ul{
-    padding: 10px;
+    padding: 10px 0px;
     height: 100%;
     display: flex;
     flex-flow: wrap column;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: flex-start;
+    align-content: center;
     position: relative;
 }
 
@@ -106,7 +105,25 @@ aside ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
+
+aside ul .li-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+aside ul li .menu1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
 
 aside ul li a{
     text-decoration: none;
@@ -134,7 +151,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-   
+ 
 }
 
 footer p{
@@ -201,7 +218,7 @@ h1{
 }
 
 .container article{
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 section{
@@ -287,6 +304,7 @@ img{
     display: inline-block;
     padding: 10px 20px;
     background-color: #234794;
+    width: 100%;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -299,18 +317,13 @@ img{
     display: none;
 
   }
-  
-  .menu-button:checked + .menu1 {
-    display: flex;
-    width: 100%;
-  }
 
-aside{
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
+    aside{
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
 
-}
+    }
 
 @media  screen and (max-width: 768px) {
     .container {
@@ -322,6 +335,8 @@ aside{
         margin-top: 10px;
         margin-bottom : 10px;
         flex-grow: 1;
+        width: 100%;
+        overflow: scroll;
       }
 
       section{
@@ -330,21 +345,35 @@ aside{
         justify-content: space-around;
         align-content: center;
     }
+
+        aside{
+            width: 100%;
+        }
     
 }
 
 .menu1 {
-  display: none;
+    display: none;
 }
 
 .menu1.show {
-  display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
 }
 
-.menu-button .menu1 li a{
-    font-size: 0.8em;
-     width:100px;
+.menu1.show li{
+
 }
 
-  
+.flex-box1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
 
