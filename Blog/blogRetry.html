@@ -117,19 +117,77 @@
                 </ul>
             </li>
             <li>
-                <button class="menu-button" onclick="toggleMenu1()">얼라이언스의 역사</button>
+                <button class="menu-button" onclick="toggleMenu2()">얼라이언스의 역사</button>
                     <ul class="menu1" id="menu2">
                         <li><a href="#">일곱 왕국의 역사</a></li>
                         <li><a href="#">스톰윈드</a></li>
                         <li><a href="#">로데론</a></li>
                     </ul>
                 </li>
-            <li><a href="#">얼라이언스의 영웅들</a></li>
-            <li><a href="#">얼라이언스 전투 기록</a></li>
-            <li><a href="#">얼라이언스의 지도자들</a></li>
-            <li><a href="#">얼라이언스 모험가들을 위한 팁</a></li>
-            <li><a href="#">동맹 종족의 역사</a></li>
-            <li><a href="#">그 외 아제로스 소식</a></li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu3()">얼라이언스의 영웅들</button>
+                <ul class="menu1" id="menu3">
+                    <li><a href="#">인간</a></li>
+                    <li><a href="#">드워프</a></li>
+                    <li><a href="#">나이트엘프</a></li>
+                    <li><a href="#">노움</a></li>
+                    <li><a href="#">늑대인간</a></li>
+                    <li><a href="#">드레나이</a></li>
+                    <li><a href="#">판다렌</a></li>
+                </ul>
+            </li>
+            </li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu4()">얼라이언스 전투 기록</button>
+                <ul class="menu1" id="menu4">
+                    <li><a href="#">~0BY</a></li>
+                    <li><a href="#">1BY~</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu5()">얼라이언스의 지도자들</button>
+                <ul class="menu1" id="menu5">
+                    <li><a href="#">인간</a></li>
+                    <li><a href="#">드워프</a></li>
+                    <li><a href="#">나이트엘프</a></li>
+                    <li><a href="#">노움</a></li>
+                    <li><a href="#">늑대인간</a></li>
+                    <li><a href="#">드레나이</a></li>
+                    <li><a href="#">판다렌</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu6()">얼라이언스 모험가들을 위한 팁</button>
+                <ul class="menu1" id="menu6">
+                    <li><a href="#">전사</a></li>
+                    <li><a href="#">성기사</a></li>
+                    <li><a href="#">마법사</a></li>
+                    <li><a href="#">사냥꾼</a></li>
+                    <li><a href="#">흑마법사</a></li>
+                    <li><a href="#">수도사</a></li>
+                    <li><a href="#">사제</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu7()">동맹 종족의 역사</button>
+                <ul class="menu1" id="menu7">
+                    <li><a href="#">인간</a></li>
+                    <li><a href="#">드워프</a></li>
+                    <li><a href="#">나이트엘프</a></li>
+                    <li><a href="#">노움</a></li>
+                    <li><a href="#">늑대인간</a></li>
+                    <li><a href="#">드레나이</a></li>
+                    <li><a href="#">판다렌</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="menu-button" onclick="toggleMenu8()">그 외 아제로스 소식</button>
+                <ul class="menu1" id="menu8">
+                    <li><a href="#">호드 소식</a></li>
+                    <li><a href="#">노스렌드 소식</a></li>
+                    <li><a href="#">판다리아 소식</a></li>
+                </ul>
+            </li>
         </ul>
     </aside>
     </div>
@@ -146,8 +204,56 @@
         }
         }
 
-        function toggleMenu1() {
+        function toggleMenu2() {
         var menu = document.getElementById("menu2");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu3() {
+        var menu = document.getElementById("menu3");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu4() {
+        var menu = document.getElementById("menu4");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu5() {
+        var menu = document.getElementById("menu5");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu6() {
+        var menu = document.getElementById("menu6");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu7() {
+        var menu = document.getElementById("menu7");
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show");
+        } else {
+            menu.classList.add("show");
+        }
+        }
+        function toggleMenu8() {
+        var menu = document.getElementById("menu8");
         if (menu.classList.contains("show")) {
             menu.classList.remove("show");
         } else {

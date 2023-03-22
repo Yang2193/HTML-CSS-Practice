@@ -4,6 +4,7 @@ body {
     font-family: 'Nanum Gothic', cursive;
     display: flex;
     flex-direction: column;
+    width : 100%;
   }
   
 header, nav, .container, footer {
@@ -72,20 +73,22 @@ nav ul li a{
     border: 1px solid #234794;
     flex-grow: 3;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
+    -ms-overflow-style: none; /* IE 및 Edge용 스크롤바 숨김 설정 */
+    scrollbar-width: none; /* Firefox용 스크롤바 숨김 설정 */
   }
 
+
 .container aside{
-    
+    width : 100%;
     margin-left: 10px;
     border: 1px solid #234794;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: flex-start;
+    flex-flow: column nowrap;
     background-color: #234794;
     flex-grow: 1;
-   
-
+    height: 100%;
+    overflow: auto;
 
 }
 
@@ -93,15 +96,16 @@ aside ul{
     padding: 10px 0px;
     height: 100%;
     display: flex;
-    flex-flow: wrap column;
-    justify-content: flex-start;
+    flex-flow: column nowrap;
+    justify-content: space-between;
     align-content: center;
     position: relative;
 }
 
 aside ul li{
     width: 100%;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,7 +306,6 @@ img{
 
 .menu-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: #234794;
     width: 100%;
     color: #fff;
@@ -310,7 +313,6 @@ img{
     cursor: pointer;
     position: relative; /* 부모 요소에 position: relative 추가 */
     font-size: 16px;
-    font-weight: bold;
   }
   
   .menu1 {
@@ -318,14 +320,14 @@ img{
 
   }
 
-    aside{
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-
-    }
-
 @media  screen and (max-width: 768px) {
+
+    body {
+        font-family: 'Nanum Gothic', cursive;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
     .container {
         display: flex;
         flex-direction: column;
@@ -335,9 +337,14 @@ img{
         margin-top: 10px;
         margin-bottom : 10px;
         flex-grow: 1;
+    
+    }
+
+
+    .container aside{
+        margin-left : 0;
         width: 100%;
-        overflow: scroll;
-      }
+    }
 
       section{
         display: flex;
@@ -346,10 +353,7 @@ img{
         align-content: center;
     }
 
-        aside{
-            width: 100%;
-        }
-    
+
 }
 
 .menu1 {
@@ -358,6 +362,7 @@ img{
 
 .menu1.show {
     margin: 0;
+    margin-top: 10px;
     padding: 0;
     width: 100%;
     display: flex;
@@ -366,9 +371,6 @@ img{
     background-color: cornflowerblue;
 }
 
-.menu1.show li{
-
-}
 
 .flex-box1{
     display: flex;
@@ -377,3 +379,24 @@ img{
 
 }
 
+/* 스크롤바 전체에 대한 스타일 */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* 스크롤바의 트랙에 대한 스타일 */
+  ::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  
+  /* 스크롤바의 쓰레기통에 대한 스타일 */
+  ::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  
+  /* 스크롤바가 움직일 때의 스타일 */
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #999;
+  }
