@@ -19,11 +19,15 @@ aside, main {
 header{
     padding-top:10px;
     background-color: #234794;
-    height: 70px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    background-image: url(./images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position : relative
 }
 
 header h1 {
@@ -31,10 +35,13 @@ header h1 {
     font-size: 36px;
     color: white;
   }
-
+.flex-nav{
+    position: absolute;
+    bottom : 0;
+    display: flex;
+    right : 0;
+}
 nav{
-    background-color: #234794;
-    height: 30px;
     flex-shrink: 0;
 }
 
@@ -82,13 +89,14 @@ nav ul li a{
 .container aside{
     width : 100%;
     margin-left: 10px;
-    border: 1px solid #234794;
     display: flex;
     flex-flow: column nowrap;
-    background-color: #234794;
     flex-grow: 1;
     height: 100%;
     overflow: auto;
+    background-image: url(./images/aside.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -143,6 +151,12 @@ aside ul li button{
     height: 124%;
 }
 
+aside ul li p {
+    font-size : 18px;
+    text-align: center;
+    background-color: none;
+}
+
 
 a:hover {
     color: gray;
@@ -155,6 +169,9 @@ footer{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    background-image: url(./images/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
  
 }
 
@@ -239,8 +256,8 @@ section a{
 section a .wantyou{
     margin: 10px;
     box-sizing: border-box;
-    width : 300px;
-    height : 350px;
+    width : 200px;
+    height : 250px;
     
 }
 
@@ -301,12 +318,12 @@ img{
 
 .recent{
     height : 40vh;
-    overflow: scroll;
+    overflow-y : scroll;
+    overflow-x : hidden;
 }
 
 .menu-button {
     display: inline-block;
-    background-color: #234794;
     width: 100%;
     color: #fff;
     border: none;
@@ -337,6 +354,7 @@ img{
         margin-top: 10px;
         margin-bottom : 10px;
         flex-grow: 1;
+        height : calc(100vh);
     
     }
 
@@ -344,6 +362,7 @@ img{
     .container aside{
         margin-left : 0;
         width: 100%;
+        height : 100%;
     }
 
       section{
@@ -352,6 +371,19 @@ img{
         justify-content: space-around;
         align-content: center;
     }
+
+
+@media  screen and (min-width: 1921px) {
+
+    section a .wantyou{
+        margin: 10px;
+        box-sizing: border-box;
+        width : 300px;
+        height : 350px;
+        
+    }
+    
+}
 
 
 }
@@ -368,7 +400,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: cornflowerblue;
+    background-image: url(./images/showmenu.png);
 }
 
 
@@ -386,7 +418,7 @@ img{
   
   /* 스크롤바의 트랙에 대한 스타일 */
   ::-webkit-scrollbar-track {
-    background-color: white;
+    background-color: #ccc;
   }
   
   /* 스크롤바의 쓰레기통에 대한 스타일 */
